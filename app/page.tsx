@@ -1,4 +1,13 @@
+import Categories from "@/modules/Categories";
+import Header from "@/modules/Header";
+import Products from "@/modules/Products";
 
 export default function Home() {
- <h1>hello</h1>
+  return(
+    <div className="bg-white p-[43px] rounded-[10px]">
+    <Header/>
+    <Categories/>
+    <Products/>
+    </div>
+  )
 }
