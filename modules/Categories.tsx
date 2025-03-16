@@ -16,7 +16,12 @@ const Categories = () => {
     const queryClient = useQueryClient()
 
     function handleChangaClick(obj:CategotyType){
-      setCategoryId(obj.id)
+      if(obj.id == "0"){
+        setCategoryId(null)
+      }
+      else{
+        setCategoryId(obj.id)
+      }
       // queryClient.invalidateQueries({queryKey:['products']})`
     }
   return (

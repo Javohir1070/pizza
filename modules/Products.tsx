@@ -9,7 +9,7 @@ import { Context } from '@/context/Context'
 const Products = () => {
     const {categoryId}  = useContext(Context)
     const params = {categoryId}
-    const {data:ProductsList, isLoading} = getRequest(`/products`, "products", params)
+    const {data:ProductsList, isLoading} = getRequest(`/products`, "products", categoryId)
     
   return (
     <div>
